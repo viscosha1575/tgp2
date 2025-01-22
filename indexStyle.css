@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Центрирование между правилами и кнопкой */
+    align-items: center;
+    background-color: #ffeb3b; /* Yellow background */
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Запрет прокрутки страницы */
+}
+
+.rules {
+    margin-top: 20px;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.play-button {
+    margin-bottom: 40px; /* Поднимаем кнопку выше */
+    padding: 20px 30px; /* Увеличиваем размер кнопки */
+    font-size: 1.5rem; /* Увеличиваем размер текста */
+    font-weight: bold;
+    color: #fff;
+    background-color: #f57f17; /* Darker yellow button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #e65100; /* Even darker yellow-orange */
+}
+
+@media (max-width: 768px) {
+    .rules {
+        font-size: 0.9rem;
+    }
+
+    .play-button {
+        font-size: 1.2rem;
+        padding: 16px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rules {
+        font-size: 0.8rem;
+    }
+
+    .play-button {
+        font-size: 1rem;
+        padding: 14px 20px;
+    }
+}
